@@ -1,0 +1,58 @@
+:root {
+  --background: #eeeeee;
+  --foreground: #bbbbbb;
+  --text-main: #000000;
+  --text-sub: #555555;
+}
+
+:root[theme="dark"] {
+  --background: #111111;
+  --foreground: #333333;
+  --text-main: #FFFFFF;
+  --text-sub: #999999;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Arial", "Helvetica", "ヒラギノ角ゴシック", "Hiragino sans", "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-main);
+  transition: color 2s, background-color 2s;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid var(--text-sub);
+  transition: border-bottom-color 2s;
+}
+
+a {
+  color: var(--text-main);
+  transition: color 2s;
+}
+
+img {
+  border: 2px solid var(--text-sub);
+  transition: border-color 2s;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
